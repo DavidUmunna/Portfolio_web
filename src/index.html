@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <title>Store</title>
+</head>
+<body>
+    <nav class="flex   bg-black  items-center justify-between  md:mx-auto  shadow">
+       
+        <div class="">
+           
+            <div class="flex text-2xl ">
+                <span class="ml-5  inline  text-md font-bold cursor-pointer text-white justify-center  text-center "><img src="assets/folder.png" class=" h-10 inline mx-2 " alt="cake_icon">David Umunna</span>
+            </div>
+        </div>
+        <div class="lg:hidden flex items-center sm:flex">
+            <button id="hamburger" class="text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      
+        
+        <div class="  flex  space-x-4 lg:flex sm:">                  
+              
+                <ul class="md:flex m-4  md:items-center" >
+                    <li class=""  >            
+                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
+                    </li>
+                    <li  >            
+                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
+                    </li>
+                    <li  >            
+                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Contributions </a>            
+                    </li>
+                    <li  >            
+                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
+                    </li>
+                   
+                </ul>   
+                <form class="md:flex md:items-center">
+                    <input class="form-control me-5 h-10  rounded-md" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn border border-white px-3 rounded-md py-2 me-10 fw-bold text-white" type="submit">Search</button>
+                </form>
+        </div> 
+    </nav>    
+</body>
+</html>
