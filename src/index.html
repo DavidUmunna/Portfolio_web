@@ -5,48 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="png" href="assets/portfolio.png">    
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  rel="stylesheet">
     <title>Store</title>
 </head>
 <body>
     <nav class="flex   bg-black  items-center justify-between  md:mx-auto  shadow">
-       
-        <div class="">
-           
-            <div class="flex text-2xl ">
-                <span class="ml-5  inline  text-md font-bold cursor-pointer text-white justify-center  text-center "><img src="assets/folder.png" class=" h-10 inline mx-2 " alt="cake_icon">David Umunna</span>
+        <div>
+            <div class="">
+               
+                <div class="flex text-2xl ">
+                    <span class="ml-5  inline  text-md font-bold cursor-pointer text-white justify-center  text-center "><img src="assets/folder.png" class=" h-10 inline mx-2 " alt="cake_icon">David Umunna</span>
+                </div>
+            </div>
+            </div>
+                <!---hamburger menu-->
+                <div class="lg:hidden md:mr-5 sm:mr-6  peer relative block">
+                      <input type="checkbox" id="menu-toggle" class="hidden peer text-white"/>
+                      <label for="menu-toggle" class="cursor-pointer text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                      </label>
+                    
+                    <div class="hidden peer-checked:block absolute bg-black p-4 space-y-2 w-48 right-0 mt-2 rounded-md shadow-lg">   
+                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
+                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
+                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
+                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
+                    </div>  
+                        
+                </div> 
+                
+            </div>
+          
+            
+            <div class="  lg:flex  items-center space-x-4  hidden block">                  
+                  
+                    <ul class="md:flex m-4  md:items-center  sm:hidden" >
+                        <li  >            
+                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
+                        </li>
+                        <li class=""  >            
+                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
+                        </li>
+                        <li  >            
+                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
+                        </li>                       
+                        <li  >            
+                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
+                        </li>
+                       
+                    </ul>   
+                    
             </div>
         </div>
-        <div class="lg:hidden flex items-center sm:flex">
-            <button id="hamburger" class="text-white">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-      
-        
-        <div class="  flex  space-x-4 lg:flex sm:">                  
-              
-                <ul class="md:flex m-4  md:items-center" >
-                    <li class=""  >            
-                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
-                    </li>
-                    <li  >            
-                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
-                    </li>
-                    <li  >            
-                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Contributions </a>            
-                    </li>
-                    <li  >            
-                        <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
-                    </li>
+       
+    </nav>  
+    <style>
+        .section_1 {
+           height: 100vh;
+           background: url('assets/workspace.jpg') center/cover no-repeat;
+           color: #fff;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           text-align: center; 
+           padding: 20px;}
+    </style>
+    <section class="section_1">
+        <div>
+            <!--img src="assets/build.png"class='mx-12' width="50px" alt="Build">-->
+            <h1 style=" font-family: 'Times New Roman', Times, serif;  font-size: 3rem; margin-bottom: 1rem;">Lets Build Together</h1>
                    
-                </ul>   
-                <form class="md:flex md:items-center">
-                    <input class="form-control me-5 h-10  rounded-md" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn border border-white px-3 rounded-md py-2 me-10 fw-bold text-white" type="submit">Search</button>
-                </form>
-        </div> 
-    </nav>    
+        </div>
+    </section>
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+      
+                <!-- Skill Item -->
+                <div class="flex items-center space-x-4">
+                  <div class="text-4xl text-blue-500">
+                    <!-- Example icon (use FontAwesome, Heroicons, or custom SVG) -->
+                    <i class="fab fa-html5"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold">HTML</h3>
+                    <p class="text-gray-600">Building semantic and accessible web pages.</p>
+                  </div>
+                </div>
+          
+                <!-- Repeat for other skills -->
+                <div class="flex items-center space-x-4">
+                  <div class="text-4xl text-green-500">
+                    <i class="fab fa-js"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold">JavaScript</h3>
+                    <p class="text-gray-600">Creating interactive web experiences.</p>
+                  </div>
+                </div>
+          
+                <div class="flex items-center space-x-4 border-solid text-black">
+                  <div class="text-4xl text-indigo-500">
+                    <i class="fab fa-react"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold">React</h3>
+                    <p class="text-gray-600">Building fast and dynamic web applications.</p>
+                  </div>
+                </div>
+                
+
+
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3   ">
+      
+                    <div class="flex items-center space-x-4  mt-7">
+                          <div class="text-4xl text-yellow-500">
+                            <i class="fab fa-python"></i>
+                          </div>
+                          <div>
+                            <h3 class="text-xl font-semibold">Python</h3>
+                            <p class="text-gray-600">creating concise and readable scripts.</p>
+                          </div>
+                    </div>
+      
+                    <div class="flex items-center  space-x-4 mt-7">
+                        <div class="text-4xl text-blue-500">
+                          <i class="fab fa-css3"></i>
+                        </div>
+                        <div>
+                          <h3 class="text-xl font-semibold">CSS</h3>
+                          <p class="text-gray-600">Designing clean and friendly user interface.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center sm:ml-0 space-x-4 ml-10 mt-7">
+                        <div class="text-4xl text-blue-500">
+                          <i class="fab fa-git"></i>
+                        </div>
+                        <div>
+                          <h3 class="text-xl font-semibold">Git</h3>
+                          <p class="text-gray-600">creating easy and efficient workflows.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3   ">
+                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="p-4">
+                      <h2 class="text-xl font-semibold text-gray-800">Sentiment Analysis app</h2>
+                      <p class="text-gray-600 mt-2">
+                        This is a simple card with a title and description. Add more content here as needed.
+                      </p>
+                    </div>
+                </div>
+                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="p-4">
+                      <h2 class="text-xl font-semibold text-gray-800">Ca</h2>
+                      <p class="text-gray-600 mt-2">
+                        This is a simple card with a title and description. Add more content here as needed.
+                      </p>
+                    </div>
+                </div>
+                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="p-4">
+                      <h2 class="text-xl font-semibold text-gray-800">Ca</h2>
+                      <p class="text-gray-600 mt-2">
+                        This is a simple card with a title and description. Add more content here as needed.
+                      </p>
+                    </div>
+                </div>
+            </div> 
+        </div>i
+    </section>
+
 </body>
 </html>
