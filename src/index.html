@@ -10,7 +10,7 @@
     <title>PortFolio</title>
 </head>
 <body>
-    <nav class="flex  position-sticky  top-0 bg-black  items-center justify-between  md:mx-auto  shadow">
+    <nav class="flex  sticky z-10  top-0 bg-black  items-center justify-between  md:mx-auto  shadow">
         <div >
             <div class="">
                
@@ -32,7 +32,7 @@
                         <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
                         <a href="#Projects" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
                         <a href="#Contact" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
-                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
+                        <a href="#Skills" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>            
                     </div>  
                         
                 </div> 
@@ -53,7 +53,7 @@
                             <a href="#Contact" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
                         </li>                       
                         <li  >            
-                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
+                            <a href="#Skills" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>            
                         </li>
                        
                     </ul>   
@@ -80,7 +80,7 @@
                    
         </div>
     </section>
-    <section id="skills" class="bg-gray-100 py-16">
+    <section id="Skills" class="bg-gray-100 py-16 max-w-6xl mx-auto bg-gray-300 shadow-lg rounded-lg  p-6">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Skills & Expertise</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
@@ -142,13 +142,13 @@
                           <p class="text-gray-600">Designing clean and friendly user interface.</p>
                         </div>
                     </div>
-                    <div class="flex items-center sm:ml-0 space-x-4 ml-10 mt-7">
+                    <div class="flex items-center  space-x-4 ml-7   mt-10 sm:mx-auto">
                         <div class="text-4xl text-blue-500">
                           <i class="fab fa-git"></i>
                         </div>
                         <div>
                           <h3 class="text-xl font-semibold">Git</h3>
-                          <p class="text-gray-600">creating easy and efficient workflows.</p>
+                          <p class="text-gray-600 ">creating easy and efficient workflows.</p>
                         </div>
                     </div>
             </div>
@@ -157,7 +157,7 @@
     
     <section class="bg-gray-100 py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+            <h2 id="Projects" class="text-3xl font-bold text-center mb-8">Projects</h2>
             <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3   ">
                 <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="p-4 ">
@@ -178,10 +178,10 @@
                        
                     </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:ml-3">
                     <div class="p-4">
                         
-                        <img src="assets/travel_1.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
+                        <img src="assets/travel_1.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64 " style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong>Travel Agengy Website</strong></h2>
                         <p class="text-gray-600 mt-2 text-justify">
                             developed a Travel Agency Website designed to offer seamless travel booking experiences. The website allows users to explore various travel destinations, book flights, hotels, and tour packages, all in one place. With a responsive design and intuitive user interface, it provides a smooth experience across devices.
@@ -204,7 +204,7 @@
                         <input type="checkbox" id="toggle" class="hidden peer" />
                     </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden sm:mx-auto mt-3 md:ml-2">
                     <div class="p-4">
                         <img src="assets/credit_card_detection.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong> Credit card fruad detection model</strong></h2>
