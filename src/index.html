@@ -7,11 +7,11 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="icon" type="png" href="assets/portfolio.png">    
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  rel="stylesheet">
-    <title>Store</title>
+    <title>PortFolio</title>
 </head>
 <body>
-    <nav class="flex   bg-black  items-center justify-between  md:mx-auto  shadow">
-        <div>
+    <nav class="flex  position-sticky  top-0 bg-black  items-center justify-between  md:mx-auto  shadow">
+        <div >
             <div class="">
                
                 <div class="flex text-2xl ">
@@ -29,9 +29,9 @@
                       </label>
                     
                     <div class="hidden peer-checked:block absolute bg-black p-4 space-y-2 w-48 right-0 mt-2 rounded-md shadow-lg">   
-                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
-                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
-                        <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
+                        <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
+                        <a href="#Projects" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
+                        <a href="#Contact" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
                         <a href="#" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
                     </div>  
                         
@@ -44,13 +44,13 @@
                   
                     <ul class="md:flex m-4  md:items-center  sm:hidden" >
                         <li  >            
-                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
+                            <a href="index.html" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
                         </li>
                         <li class=""  >            
-                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
+                            <a href="#Projects" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
                         </li>
                         <li  >            
-                            <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
+                            <a href="#Contact" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>            
                         </li>                       
                         <li  >            
                             <a href="#" class="text-xl hover:text-cyan-500 duration-500 text-white font-bold p-4">Certifications </a>            
@@ -160,32 +160,148 @@
             <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
             <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3   ">
                 <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-                    <div class="p-4">
-                      <h2 class="text-xl font-semibold text-gray-800">Sentiment Analysis app</h2>
-                      <p class="text-gray-600 mt-2">
-                        This is a simple card with a title and description. Add more content here as needed.
-                      </p>
+                    <div class="p-4 ">
+                        <img src="assets/sentiment.png" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
+                        <h2 class="text-xl font-semibold text-gray-800"><strong>Sentiment Analysis app</strong></h2>
+                        <p class="text-gray-600 mt-2 text-justify">
+                            a Sentiment Analysis App designed to classify feedback, reviews, or any text as positive or negative. Using advanced natural language processing (NLP) techniques, the app provides users with real-time insights into the sentiment behind their text inputs.
+                            Key features include:
+                        </p>
+                        <ul class="list-disc pl-6 text-justify">
+                           <li >User-Friendly Interface: A clean and intuitive design allows anyone to analyze sentiment effortlessly.</li>
+                           <li>Real-Time Feedback: Instant sentiment classification for fast decision-making.</li>
+                           <li> Scalable Backend: Built with python and Streamlit , ensuring seamless performance. </li>
+                        </ul>   
+                        <p class="text-justify">This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.</p>
+                           
+                          
+                       
                     </div>
                 </div>
                 <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="p-4">
-                      <h2 class="text-xl font-semibold text-gray-800">Ca</h2>
-                      <p class="text-gray-600 mt-2">
-                        This is a simple card with a title and description. Add more content here as needed.
-                      </p>
+                        
+                        <img src="assets/travel_1.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
+                        <h2 class="text-xl font-semibold text-gray-800"><strong>Travel Agengy Website</strong></h2>
+                        <p class="text-gray-600 mt-2 text-justify">
+                            developed a Travel Agency Website designed to offer seamless travel booking experiences. The website allows users to explore various travel destinations, book flights, hotels, and tour packages, all in one place. With a responsive design and intuitive user interface, it provides a smooth experience across devices.
+                            Key features include:
+                        </p>
+                        <ul class="list-disc pl-6 text-justify font-semibold">
+                            <li >User-Friendly Navigation: Easy browsing of destinations and services with a simple, clean design.</li>
+                            <li>Integrated Booking System: Allows users to search, compare, and book travel options in real-time.</li>
+                            <span class="inline-block text-gray-700 text-base overflow-hidden max-h-12 transition-all duration-300" id="more"><li>Responsive Design: Optimized for both desktop and mobile, ensuring a smooth experience anywhere</li>
+                                                <li>Interactive Maps and Travel Guides: Offers interactive maps and detailed travel guides for each destination.</li>
+                            </span>
+                        </ul> 
+                            <p class="text-justify text-base">
+                            
+                                <span class="inline-block text-gray-700 text-base overflow-hidden max-h-12 transition-all duration-300" id="more">
+                                        This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.
+                                </span>  
+                            </p>
+                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block" id="toggle-label">Read More</label>
+                        <input type="checkbox" id="toggle" class="hidden peer" />
                     </div>
                 </div>
                 <div class="max-w-sm mx-auto bg-white shadow-md rounded-lg overflow-hidden">
                     <div class="p-4">
-                      <h2 class="text-xl font-semibold text-gray-800">Ca</h2>
-                      <p class="text-gray-600 mt-2">
-                        This is a simple card with a title and description. Add more content here as needed.
-                      </p>
+                        <img src="assets/credit_card_detection.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
+                        <h2 class="text-xl font-semibold text-gray-800"><strong> Credit card fruad detection model</strong></h2>
+                        <p class="text-gray-600 mt-2 text-justify">
+                            I developed a Credit Card Fraud Detection Model designed to identify fraudulent transactions with high accuracy. Using a combination of advanced machine learning algorithms and a robust dataset of transaction records, the model helps financial institutions mitigate risks and enhance security for their customers.
+                            Key Features:
+                        </p>
+                        <ul class="list-disc pl-6 text-justify">
+                           <li >Data Preprocessing: Cleaned and normalized large datasets to ensure reliable model performance.</li>
+                           <li>Feature Engineering: Extracted critical features to detect anomalies in transaction patterns.
+                            Machine Learning: Implemented algorithms such as Logistic Regression, Random Forest, and Gradient Boosting to achieve optimal fraud detection accuracy..</li>
+                           <li> Model Evaluation: Used precision, recall, and F1-score metrics to ensure the model minimizes false positives while identifying fraudulent activity effectively.</li>
+                        </ul>   
+                        <p class="text-justify">.This project demonstrates how technology can be leveraged to protect businesses and customers from financial fraud, showcasing my skills in machine learning, data analysis, and model deployment.
+                        </p>
+                           
                     </div>
                 </div>
+                <style>
+                            #toggle:checked~#more {
+                                max-height: 200px;
+
+                            };
+                            #toggle:checked~label {
+                                content: 'Read Less';
+                            }
+                </style>
             </div> 
         </div>i
+    
+    <section class="max-w-md mx-auto bg-gray-300 shadow-lg rounded-lg  p-6">
+        <div class="container  mx-auto pt-4 mt-5 pb-3">
+            <h1 class="d-flex text-3xl font-bold text-center mb-8" id="Contact"> <strong>Contact Me</strong></h1>
+            <form class="text-center">
+              <div class="mb-4  ">
+                <label for="name" class="block text-start text-gray-700 font-medium mb-2">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="Enter your name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="block text-start text-gray-700 font-medium mb-2">Email</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="Enter your name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="block text-start text-gray-700 font-medium mb-2">Message</label>
+                <textarea 
+                    id="message" 
+                    rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    placeholder="Write your message"
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="btn border w-full border-blue-500 rounded text-white bg-blue-700 py-2 px-2 bg-blue">Submit</button>
+            </form>
+        </div> 
     </section>
 
 </body>
+<footer>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-sm text-center md:text-left mb-4 md:mb-0">
+                &copy; 2024 Your Company. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+                <!-- Facebook -->
+                <a href="https://facebook.com" class="text-gray-600  hover:text-black transition">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com" class="text-gray-600 hover:text-gray-200 transition">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" class="text-gray-600 hover:text-gray-200 transition">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com" class="text-gray-400 hover:text-gray-200 transition">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" class="text-gray-600 hover:text-gray-200 transition">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+</footer>
 </html>
