@@ -1,0 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.card-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}/*# sourceMappingURL=main.css.map */

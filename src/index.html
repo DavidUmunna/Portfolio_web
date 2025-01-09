@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/main.css">
     <link rel="icon" type="png" href="assets/portfolio.png">    
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  rel="stylesheet">
     <title>PortFolio</title>
@@ -29,10 +30,11 @@
                       </label>
                     
                     <div class="hidden peer-checked:block absolute bg-black p-4 space-y-2 w-48 right-0 mt-2 rounded-md shadow-lg">   
-                        <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
+                        <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>  
+                        <a href="#Skills" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>       
                         <a href="#Projects" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
                         <a href="#Contact" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
-                        <a href="#Skills" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>            
+                                    
                     </div>  
                         
                 </div> 
@@ -157,10 +159,10 @@
     </section>
     
     <section class="bg-gray-100 py-16 row g-4">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 ">
             <h2 id="Projects" class="text-3xl font-bold text-center mb-8">Projects</h2>
             <div class="space-y-4 p-4 md:flex  lg:flex  ">
-                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden p-6">
+                <div class="max-w-sm mx-auto mt-4 bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
                     <div class="p-4 ">
                         <img src="assets/sentiment.png" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong>Sentiment Analysis app</strong></h2>
@@ -176,10 +178,10 @@
                         <p class="text-justify">This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.</p>
                         
                           
-                      
+                        <label  for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 absolute bottom-2 left-2mt-2 block " id="toggle-label">Read More</label>
                     </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden sm:ml-3">
+                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
                     <div class="p-4">
                         
                         <img src="assets/travel_1.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64 " style="object-fit: cover;"  alt="">
@@ -197,15 +199,15 @@
                         </ul> 
                             <p class="text-justify text-base">
                             
-                                <span class="inline-block text-gray-700 text-base overflow-hidden max-h-12 transition-all duration-300" id="more">
+                                
                                         This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.
-                                </span>  
+                                
                             </p>
-                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block" id="toggle-label">Read More</label>
+                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block absolute bottom-2 left-2 " id="toggle-label">Read More</label>
                         <input type="checkbox" id="toggle" class="hidden peer" />
                     </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-xl rounded-lg overflow-hidden sm:mx-auto mt-3 md:ml-2">
+                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
                     <div class="p-4">
                         <img src="assets/credit_card_detection.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong> Credit card fruad detection model</strong></h2>
@@ -221,7 +223,7 @@
                         </ul>   
                         <p class="text-justify">.This project demonstrates how technology can be leveraged to protect businesses and customers from financial fraud, showcasing my skills in machine learning, data analysis, and model deployment.
                         </p>
-                           
+                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block absolute bottom-2 left-2" id="toggle-label">Read More</label>
                     </div>
                 </div>
                 <style>
@@ -278,7 +280,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-sm text-center md:text-left mb-4 md:mb-0">
-                &copy; 2024 Your Company. All rights reserved.
+                &copy; 2024 portfolio. All rights reserved.
             </p>
             <div class="flex space-x-6">
                 <!-- Facebook -->
