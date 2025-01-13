@@ -1,4 +1,3 @@
-
 class page_functionality{
     constructor(){
         this.elements= document.querySelectorAll('a[href^="#"]')
@@ -6,7 +5,7 @@ class page_functionality{
         this.heading=document.querySelector('.section_1 h1 ')
         this.paragraph=document.querySelector('.section_1 p');
         this.init()
-        this.treemenu=new treemenu()
+        //this.treemenu=new TreeMenu(menuTree)
     }
     init(){
         this.scroll()
@@ -64,66 +63,52 @@ const menuTree = {
       { name: "Contact" },
     ],
 };
-class treemenu{
-    constructor(){
-        this.tree= {
-            name: "Home",
-            children: [
-            {
-                name: "Projects",
-                children: [
-                    { name: "Web Development" },
-                    { name: "Machine Learning" },
-                    { name: "Open Source" },
-                ],
-            },
-            {
-                name: "Blog",
-                children: [
-                    { name: "Programming" },
-                    { name: "Career" },
-                ],
-            },
-            { name: "Contact" },
-            ],
-        };
-        this.ul=document.createElement('ul')
-        this.li=document.createElement('li')
-        
-        this.init()
-    }
-    init(){
-        
-        this.createMenu(this.tree)
-    }
-    createMenu(tree){
-        this.li.textContent=tree.name;
 
-        this.li.addEventListener('click',(e)=>{
+class TreeMenu {
+    constructor(tree) {
+        this.tree = tree;
+        this.ul = document.createElement('ul');
+        this.init();
+    }
+
+    init() {
+        this.createMenu(this.tree, this.ul);
+    }
+
+    createMenu(tree, parentElement) {
+        const li = document.createElement('li');
+        li.textContent = tree.name;
+
+        li.addEventListener('click', (e) => {
             e.stopPropagation();
-            this.li.classList.toggle('collapsed')
-        })
-        this.ul.appendChild(this.li)
+            li.classList.toggle('collapsed');
+        });
+        parentElement.appendChild(li);
 
-        if(tree.children){
-            const childrenContainer=document.createElement('ul')
-            tree.children.forEach((child)=>{
-                childrenContainer.appendChild(this.createMenu(child))
-            })
-            this.ul.appendChild(childrenContainer)
-
-            return this.ul;
+        if (tree.children) {
+            const childrenContainer = document.createElement('ul');
+            tree.children.forEach((child) => {
+                this.createMenu(child, childrenContainer);
+            });
+            parentElement.appendChild(childrenContainer);
         }
+
+        return li;
     }
 }
 
+// Example usage
+const treeData = {
+    name: "Root",
+    children: [
+        { name: "Home" },
+        { name: "About" },
+        { name: "Projects" },
+        { name: "Contact" },
+    ],
+};
 
-
+const menu = new TreeMenu(treeData);
+document.body.appendChild(menu.ul);
 
 const app=new page_functionality()
-
-
-
-
-
-
