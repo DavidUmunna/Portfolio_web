@@ -6,6 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/main.css">
+    <script src="js/app.js" defer></script>
     <link rel="icon" type="png" href="assets/portfolio.png">    
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  rel="stylesheet">
     <title>PortFolio</title>
@@ -30,11 +31,10 @@
                       </label>
                     
                     <div class="hidden peer-checked:block absolute bg-black p-4 space-y-2 w-48 right-0 mt-2 rounded-md shadow-lg">   
-                        <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>  
-                        <a href="#Skills" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>       
+                        <a href="index.html" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4 italic">Home </a>            
                         <a href="#Projects" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Projects </a>            
                         <a href="#Contact" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Contact </a>              
-                                    
+                        <a href="#Skills" class="block hover:text-cyan-500 duration-500 text-white font-bold p-4">Skills </a>            
                     </div>  
                         
                 </div> 
@@ -67,19 +67,20 @@
     <style>
         .section_1 {
            height: 100vh;
-           background: url('assets/workspace.jpg') center/cover no-repeat;
+           background: url('assets/workspace_2.png') center/cover no-repeat;
            color: #fff;
            display: flex;
-           align-items: center;
+           align-items: flex-end;
            justify-content: center;
            text-align: center; 
            padding: 20px;}
     </style>
     <section class="section_1">
-        <div>
+        <div class="container mb-8 ">
             <!--img src="assets/build.png"class='mx-12' width="50px" alt="Build">-->
-            <h1 style=" font-family: 'Times New Roman', Times, serif;  font-size: 3rem; margin-bottom: 1rem;">Lets Build Together</h1>
-                   
+            <h1 style=" font-family: 'Times New Roman', Times, serif;  font-size: 3rem; margin-bottom: 1rem;"><strong>Lets Build Together</strong></h1>
+            <p style=" font-family: 'Times New Roman', Times, serif;" class="text-lg md:text-xl text-white mb-8">
+              <strong>Share your passion for creation. Let's collaborate and bring your ideas to life</strong>.</p>
         </div>
     </section>
     <section id="Skills" class="bg-gray-100 py-16 max-w-6xl mx-auto bg-gray-300 shadow-lg rounded-lg  p-6">
@@ -122,8 +123,8 @@
                 
 
 
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            <!--</div>-->
+            <!--<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">-->
       
                     <div class="flex items-center space-x-4  mt-7">
                           <div class="text-4xl text-yellow-500">
@@ -144,7 +145,7 @@
                           <p class="text-gray-600">Designing clean and friendly user interface.</p>
                         </div>
                     </div>
-                    <div class="flex items-center  space-x-4    mt-7 ">
+                    <div class="flex items-center  space-x-4    mt-7 translate-y-2 transform  ">
                         <div class="text-4xl text-blue-500">
                           <i class="fab fa-git"></i>
                         </div>
@@ -159,30 +160,34 @@
     </section>
     
     <section class="bg-gray-100 py-16 row g-4">
-        <div class="container mx-auto px-4 ">
+        <div class="container mx-auto px-4">
             <h2 id="Projects" class="text-3xl font-bold text-center mb-8">Projects</h2>
             <div class="space-y-4 p-4 md:flex  lg:flex  ">
-                <div class="max-w-sm mx-auto mt-4 bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
-                    <div class="p-4 ">
-                        <img src="assets/sentiment.png" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
-                        <h2 class="text-xl font-semibold text-gray-800"><strong>Sentiment Analysis app</strong></h2>
-                        <p class="text-gray-600 mt-2 text-justify">
-                            a Sentiment Analysis App designed to classify feedback, reviews, or any text as positive or negative. Using advanced natural language processing (NLP) techniques, the app provides users with real-time insights into the sentiment behind their text inputs.
-                            Key features include:
-                        </p>
-                        <ul class="list-disc pl-6 text-justify">
-                            <li >User-Friendly Interface: A clean and intuitive design allows anyone to analyze sentiment effortlessly.</li>
-                            <li>Real-Time Feedback: Instant sentiment classification for fast decision-making.</li>
-                            <li> Scalable Backend: Built with python and Streamlit , ensuring seamless performance. </li>
-                        </ul>   
-                        <p class="text-justify">This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.</p>
-                        
-                          
-                        <label  for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 absolute bottom-2 left-2mt-2 block " id="toggle-label">Read More</label>
-                    </div>
+                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden  mt-4 border relative text-center">
+                  <div class="p-4 flex-grow ">
+                      <img src="assets/sentiment.png" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit:cover;"  alt="">
+                      <h2 class="text-xl font-semibold text-gray-800"><strong>Sentiment Analysis app</strong></h2>
+                      <p class="text-gray-600 mt-2 text-justify">
+                          a Sentiment Analysis App designed to classify feedback, reviews, or any text as positive or negative. Using advanced natural language processing (NLP) techniques, the app provides users with real-time insights into the sentiment behind their text inputs.
+                          Key features include:
+                      </p>
+                      <ul class="list-disc pl-6 text-justify">
+                          <li >User-Friendly Interface: A clean and intuitive design allows anyone to analyze sentiment effortlessly.</li>
+                          <li>Real-Time Feedback: Instant sentiment classification for fast decision-making.</li>
+                          <li> Scalable Backend: Built with python and Streamlit , ensuring seamless performance. </li>
+                      </ul>   
+                      <p class="text-justify">This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.</p>
+                      
+                     
+                      
+                  </div>
+                  <div class="p-5 sm:p-2">
+                    <a href="https://github.com/chima1968/sentiment_app.git"> <button class=" shadow-lg hover:translate-y-2 transition mt-2  absolute bottom-4 left-1/2 transform -translate-x-1/2   w-full  rounded text-white bg-blue-700 overflow-hidden py-2 px-4 sm:w-1/ 2 mx-2 md:mx-4 " > <strong>Read More</strong></button></a>
+                   
+                  </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
-                    <div class="p-4">
+                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden sm:ml-3 relative border text-center">
+                    <div class="p-4 flex-grow">
                         
                         <img src="assets/travel_1.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64 " style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong>Travel Agengy Website</strong></h2>
@@ -190,25 +195,25 @@
                             developed a Travel Agency Website designed to offer seamless travel booking experiences. The website allows users to explore various travel destinations, book flights, hotels, and tour packages, all in one place. With a responsive design and intuitive user interface, it provides a smooth experience across devices.
                             Key features include:
                         </p>
-                        <ul class="list-disc pl-6 text-justify font-semibold">
+                        <ul class="list-disc pl-6 text-justify font-semibold  break-words whitespace-normal text-ellipsis">
                             <li >User-Friendly Navigation: Easy browsing of destinations and services with a simple, clean design.</li>
                             <li>Integrated Booking System: Allows users to search, compare, and book travel options in real-time.</li>
-                            <span class="inline-block text-gray-700 text-base overflow-hidden max-h-12 transition-all duration-300" id="more"><li>Responsive Design: Optimized for both desktop and mobile, ensuring a smooth experience anywhere</li>
-                                                <li>Interactive Maps and Travel Guides: Offers interactive maps and detailed travel guides for each destination.</li>
-                            </span>
+                            <li>Responsive Design: Optimized for both desktop and mobile, ensuring a smooth experience anywhere</li>
+                          
                         </ul> 
-                            <p class="text-justify text-base">
-                            
-                                
-                                        This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.
-                                
+                            <p class="text-justify text-base  break-words whitespace-normal">
+                              This app can be applied in various domains like customer feedback analysis, social media monitoring, and market research. It’s a powerful tool for turning raw text data into actionable insights.
                             </p>
-                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block absolute bottom-2 left-2 " id="toggle-label">Read More</label>
-                        <input type="checkbox" id="toggle" class="hidden peer" />
+                        
+                        
+                    </div>
+                    <div class="p-5 ">
+                      <a href="https://github.com/chima1968/travel_agency_web.git">  <button class=" shadow-xl hover:translate-y-2 transition mt-2  absolute bottom-4 left-1/2 transform -translate-x-1/2  w-full border-blue-500 rounded text-white bg-blue-700 overflow-hidden py-2 px-4  mx-2 md:mx-4 "> <strong>Read More</strong></button></a>
+                     
                     </div>
                 </div>
-                <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden relative p-5 border  sm:ml-3">
-                    <div class="p-4">
+                <div class=" container max-w-sm mx-auto bg-white shadow-xl rounded-lg overflow-hidden    relative border text-center md:ml-2 sm:mx-auto  sm:w-auto   ">
+                    <div class="p-4 flex-grow">
                         <img src="assets/credit_card_detection.jpg" class="rounded  w-full h-64 md:h-48 lg:h-64" style="object-fit: cover;"  alt="">
                         <h2 class="text-xl font-semibold text-gray-800"><strong> Credit card fruad detection model</strong></h2>
                         <p class="text-gray-600 mt-2 text-justify">
@@ -216,15 +221,18 @@
                             Key Features:
                         </p>
                         <ul class="list-disc pl-6 text-justify">
-                           <li >Data Preprocessing: Cleaned and normalized large datasets to ensure reliable model performance.</li>
-                           <li>Feature Engineering: Extracted critical features to detect anomalies in transaction patterns.
+                          <li >Data Preprocessing: Cleaned and normalized large datasets to ensure reliable model performance.</li>
+                          <li>Feature Engineering: Extracted critical features to detect anomalies in transaction patterns.
                             Machine Learning: Implemented algorithms such as Logistic Regression, Random Forest, and Gradient Boosting to achieve optimal fraud detection accuracy..</li>
-                           <li> Model Evaluation: Used precision, recall, and F1-score metrics to ensure the model minimizes false positives while identifying fraudulent activity effectively.</li>
+                          <li> Model Evaluation: Used precision, recall, and F1-score metrics to ensure the model minimizes false positives while identifying fraudulent activity effectively.</li>
                         </ul>   
-                        <p class="text-justify">.This project demonstrates how technology can be leveraged to protect businesses and customers from financial fraud, showcasing my skills in machine learning, data analysis, and model deployment.
-                        </p>
-                        <label for="toggle" class="cursor-pointer text-blue-500 hover:text-blue-700 mt-2 block absolute bottom-2 left-2" id="toggle-label">Read More</label>
+                        <p class="text-justify">.This project demonstrates how technology can be leveraged to protect businesses and customers from financial fraud, showcasing my skills in machine learning, data analysis, and model deployment.</p>
+                
                     </div>
+                    <div class="p-5 ">
+                      <button class=" hover:translate-y-2 transition mt-2  absolute bottom-4 left-1/2 transform -translate-x-1/2  w-full border-blue-500 rounded text-white bg-blue-700 overflow-hidden py-2 px-4  mx-2 md:mx-4 border shadow-xl "> <strong>Read More</strong> </button>
+                    </div>
+
                 </div>
                 <style>
                             #toggle:checked~#more {
@@ -236,7 +244,7 @@
                             }
                 </style>
             </div> 
-        </div>i
+        </div>
     
     <section class="max-w-md mx-auto bg-gray-300 shadow-lg rounded-lg  p-6">
         <div class="container  mx-auto pt-4 mt-5 pb-3">
@@ -270,7 +278,7 @@
                 ></textarea>
               </div>
               
-              <button type="submit" class="btn border w-full border-blue-500 rounded text-white bg-blue-700 py-2 px-2 bg-blue">Submit</button>
+              <button type="submit" class="btn border w-full border-blue-500 rounded text-white bg-blue-700 py-2 px-2 ">Submit</button>
             </form>
         </div> 
     </section>
@@ -280,7 +288,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <p class="text-sm text-center md:text-left mb-4 md:mb-0">
-                &copy; 2024 portfolio. All rights reserved.
+                &copy; 2024 Your Company. All rights reserved.
             </p>
             <div class="flex space-x-6">
                 <!-- Facebook -->
