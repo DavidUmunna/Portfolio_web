@@ -97,18 +97,10 @@ class TreeMenu {
     }
 }
 
-// Example usage
-const treeData = {
-    name: "Root",
-    children: [
-        { name: "Home" },
-        { name: "About" },
-        { name: "Projects" },
-        { name: "Contact" },
-    ],
-};
 
-const menu = new TreeMenu(treeData);
+
+
+const menu = new TreeMenu(menuTree);
 document.body.appendChild(menu.ul);
 
 const app=new page_functionality()
